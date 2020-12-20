@@ -318,56 +318,56 @@ function keydownfun(e) {
 
   for (i = 0 ; i < b.length; i++)
   {
-    if(a[i]=='+')
+    if(b[i]=='+')
     {
       if(i == 1)
       {
-        res = res + a[i-1]+a[i+1];
+        res = res + b[i-1]+b[i+1];
 
       }
       else{
-        res = res + a[i+1];
+        res = res + b[i+1];
       }
      
     }
 
-    if(a[i]=='-')
+    if(b[i]=='-')
     {
       if(i == 1)
       {
-        res = a[i-1]-a[i+1];
+        res = b[i-1]-b[i+1];
 
       }
       else{
-        res = res - a[i+1];
+        res = res - b[i+1];
       }
      
     }
 
-    if(a[i]=='*')
+    if(b[i]=='*')
     {
       if(i == 1)
       {
-        res = a[i-1]*a[i+1];
+        res = b[i-1]*b[i+1];
 
       }
       else{
-        res = res * a[i+1];
+        res = res * b[i+1];
       }
      
     }
 
 
     
-    if(a[i]=='/')
+    if(b[i]=='/')
     {
       if(i == 1)
       {
-        res = a[i-1]/a[i+1];
+        res = b[i-1]/b[i+1];
 
       }
       else{
-        res = res / a[i+1];
+        res = res / b[i+1];
       }
      
     }
